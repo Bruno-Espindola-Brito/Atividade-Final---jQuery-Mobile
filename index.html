@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>
+		Atividade Final
+	</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap---->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- JQuery Mobile -->
+	<link rel="stylesheet" href="./css/themes/Theme_A.css" />
+	<link rel="stylesheet" href="./css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+</head>
+
+<body>
+	<div data-role="page" id="index">
+		<div data-role="header">
+			<h1>JQuery Mobile</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<div data-role="panel" id="painel" data-display="overlay">
+				<div class="ui-panel-inner">
+					<ul class="ui-listview">
+						<li class="ui-first-child" data-icon="home">
+							<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-home">jQuery Mobile</a>
+						</li>
+						<li>
+							<a href="#form" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Form</a>
+						</li>
+						<li>
+							<a href="#SEO" class="ui-btn ui-btn-icon-right ui-icon-carat-r">SEO</a>
+						</li>
+						<li>
+							<a href="#CMS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">CMS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#painel" class="ui-btn ui-corner-all">Painel</a>
+
+
+			<div class="ui-corner-all ui-responsive">
+				<div class="ui-bar ui-bar-a">
+					<h3>JQuery Mobile</h3>
+				</div>
+				<div class="ui-body ui-body-b">
+					<p>
+						jQuery é uma biblioteca JavaScript criada por John Resig em 2006. É como um software de código aberto: seu
+						uso é licenciado pelo Massachusetts Institute of Technology (MIT) e pelo GNU General Public License (GPL).
+						Sua principal finalidade é associar-se aos elementos JavaScript em HTMLpara conferir mais dinamismo e
+						usabilidade às páginas na internet.<br><br>
+
+						Suas linhas de código simplificam os scripts interpretados pelo navegador do client-side e por esse motivo é
+						uma das bibliotecas mais populares na comunidade de desenvolvedores.
+					</p>
+				</div>
+			</div>
+			<br>
+			<div><img src="img/jQuery.png" class="img-fluid" alt="..."></div>
+
+
+
+		</div>
+		<div data-role="footer">
+			<h4>Todos os direitos reservados. Bruno Espindola de Brito</h4>
+		</div><!-- /footer -->
+	</div>
+
+	<!-- Start of second page -->
+	<div data-role="page" id="form">
+
+		<div data-role="header">
+			<h1>Cadastro</h1>
+		</div><!-- /header -->
+
+		<div role="main" class="ui-content">
+			<div data-role="panel" id="painel" data-display="overlay">
+				<div class="ui-panel-inner">
+					<ul class="ui-listview">
+						<li class="ui-first-child" data-icon="home">
+							<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-home">jQuery Mobile</a>
+						</li>
+						<li>
+							<a href="#form" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Form</a>
+						</li>
+						<li>
+							<a href="#SEO" class="ui-btn ui-btn-icon-right ui-icon-carat-r">SEO</a>
+						</li>
+						<li>
+							<a href="#CMS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">CMS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#painel" class="ui-btn ui-corner-all">Painel</a>
+			<form>
+				<label for="text-basic">Nome:</label>
+				<input type="text" name="text-basic" id="text-basic" value="">
+				<label for="number-pattern">Idade:</label>
+				<input type="number" name="number" pattern="[0-9]*" id="idade" value="">
+				<label for="number-pattern">RG:</label>
+				<input type="number" name="number" pattern="[0-9]*" id="rg" value="">
+				<label for="date">Data de nascimento:</label>
+				<input type="date" name="date" id="date" value="">
+				<label for="tel">Telefone:</label>
+				<input type="tel" name="tel" id="tel" placeholder="(00)00000-0000" value="">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="insira.seu.email@gmail.com" value="">
+				<fieldset data-role="controlgroup">
+					<legend>Quais linguagens você é proficiente:</legend>
+					<input type="checkbox" name="checkbox-1a" id="checkbox-1a">
+					<label for="checkbox-1a">Java</label>
+					<input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+					<label for="checkbox-2a">Javascript</label>
+					<input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+					<label for="checkbox-3a">PHP</label>
+					<input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+					<label for="checkbox-4a">Python</label>
+				</fieldset>
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Insira seu curriculum aqui:</label>
+					<input class="form-control" type="file" id="formFile">
+				</div>
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" value="" autocomplete="off">
+				<input type="submit" class="ui-shadow ui-btn ui-corner-all" value="enviar">
+
+			</form>
+			<p><a href="#index">Back</a></p>
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>Todos os direitos reservados. Bruno Espindola de Brito</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+	<!-- Start of third page -->
+	<div data-role="page" id="SEO">
+
+
+		<div data-role="header">
+			<h1>SEO - Search Engine Optimization</h1>
+		</div><!-- /header -->
+
+		<div role="main" class="ui-content">
+			<div data-role="panel" id="painel" data-display="overlay">
+				<div class="ui-panel-inner">
+					<ul class="ui-listview">
+						<li class="ui-first-child" data-icon="home">
+							<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-home">jQuery Mobile</a>
+						</li>
+						<li>
+							<a href="#form" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Form</a>
+						</li>
+						<li>
+							<a href="#SEO" class="ui-btn ui-btn-icon-right ui-icon-carat-r">SEO</a>
+						</li>
+						<li>
+							<a href="#CMS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">CMS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#painel" class="ui-btn ui-corner-all">Painel</a>
+
+			<div class="ui-corner-all ui-responsive">
+				<div class="ui-bar ui-bar-a">
+					<h3>SEO - Search Engine Optimization</h3>
+				</div>
+				<div class="ui-body ui-body-b">
+					<p>
+						SEO é uma otimização para os motores de busca, isto é, um conjunto de técnicas que influenciam os algoritmos
+						dos buscadores a definir o ranking de uma página para determinada palavra-chave que foi pesquisada.<br><br>
+
+						No momento em que uma pessoa faz uma busca por algum produto ou serviço que está listado no seu site, caso o
+						ele e todo o conteúdo presente esteja bem posicionado, ele aparecerá nos primeiros resultados, permitindo
+						que mais pessoas encontrem a sua marca.<br><br>
+
+						A aplicação de SEO, quando feita adequadamente, se inicia ainda na criação do seu site, até os produtos e
+						serviços que serão listados posteriormente.<br><br>
+
+						Por isso, é importante que todo o trabalho realizado seja voltado para a primeira página do Google, para
+						aumentar as chances da sua marca ser vista. Quanto mais acessos sua empresa tiver, maior será sua relevância
+						perante ao mercado!
+					</p>
+				</div>
+			</div>
+			<br />
+			<div><img src="img/SEO.png" class="img-fluid" alt="..."></div>
+
+			<p><a href="#index">Back</a></p>
+		</div>
+		<!--/content-->
+
+		<div data-role="footer">
+			<h4>Todos os direitos reservados. Bruno Espindola de Brito</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+	<!-- Start of fourth page -->
+	<div data-role="page" id="CMS">
+
+		<div data-role="header">
+			<h1>CMS - Content Management System </h1>
+		</div><!-- /header -->
+
+		<div role="main" class="ui-content">
+			<div data-role="panel" id="painel" data-display="overlay">
+				<div class="ui-panel-inner">
+					<ul class="ui-listview">
+						<li class="ui-first-child" data-icon="home">
+							<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-home">jQuery Mobile</a>
+						</li>
+						<li>
+							<a href="#form" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Form</a>
+						</li>
+						<li>
+							<a href="#SEO" class="ui-btn ui-btn-icon-right ui-icon-carat-r">SEO</a>
+						</li>
+						<li>
+							<a href="#CMS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">CMS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#painel" class="ui-btn ui-corner-all">Painel</a>
+
+			<div class="ui-corner-all ui-responsive">
+				<div class="ui-bar ui-bar-a">
+					<h3>CMS - Content Management System </h3>
+				</div>
+				<div class="ui-body ui-body-b">
+					<p>
+						CMS é uma sigla para Content Management System, em outras palavras, sistema de gerenciamento de conteúdos.
+						Os CMS de certa forma revolucionaram a maneira das pessoas e empresas produzirem conteúdos, pois eles
+						facilitaram a criação de sites, blogs e lojas virtuais.<br><br>
+
+						Indo direto ao ponto, um CMS permite a organização, criação e publicação de conteúdo no seu site, blog ou
+						portal de noticias.<br><br>
+
+						Assim sendo, ele possui uma interface gráfica para ajudar no gerenciamento de todos os aspectos do seu site.
+						Você pode criar e editar conteúdos, adicionar imagens e vídeos, e montar o layout do site. WordPress,
+						Magento, e Drupal são alguns dos CMS mais populares do mercado.<br><br>
+
+						Sem um sistema CMS, você precisaria conhecer algumas linguagens de programação para criar um site. Além
+						disso, você também precisaria fazer o upload de todos os arquivos para o servidor manualmente.
+
+						Afinal, um site moderno consiste em duas partes principais: front-end e back-end. O front-end é a parte do
+						seu site que os visitantes conseguem visualizar. Isto é, posts do blog, imagens, vídeos, páginas de contato,
+						formulário de inscrição, etc. No entanto, a parte de texto é mostrada com a linguagem de marcação padrão
+						HTML, enquanto o design é adicionado com CSS e JavaScript.
+					</p>
+				</div>
+			</div>
+			<br />
+			<div><img src="img/CMS.jpg" class="img-fluid" alt="..."></div>
+
+			<p><a href="#index">Back</a></p>
+		</div>
+		<!--/content-->
+
+		<div data-role="footer">
+			<h4>Todos os direitos reservados. Bruno Espindola de Brito</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+	<!--Bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<!--JQuery Mobile---->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+
+</html>
